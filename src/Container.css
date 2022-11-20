@@ -6,3 +6,11 @@ h1 {
 .card-body {
   padding: 30px !important;
 }
+
+.link {
+  font-size: 13px;
+}
+
+.creator {
+  font-size: 13px;
+}

@@ -14,6 +14,15 @@ export default function Container() {
         </div>
         <Current value={17} />
       </div>
+      <a
+        href="https://github.com/hollsmith2000/react-weather-application"
+        target="_blank"
+        rel="noreferrer"
+        className="link"
+      >
+        Open-source code
+      </a>
+      <span className="creator"> by Holly Smith</span>
     </div>
   );
 }
