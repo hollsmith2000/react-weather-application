@@ -1,3 +1,20 @@
+h1 {
+  font-size: 30px;
+  max-width: 250px !important;
+  margin: 0 !important;
+}
+.card-body {
+  padding: 30px !important;
+}
+
+.link {
+  font-size: 13px;
+}
+
+.creator {
+  font-size: 13px;
+}
+
 .Search {
   display: inline !important;
   width: 300px !important;

@@ -11,10 +11,12 @@
   font-size: 30px !important;
 }
 
-.units {
-  font-size: 10px;
-}
-
 li {
   list-style: none;
+}
+
+.subheading {
+  text-transform: capitalize;
+  font-size: 20px;
+  margin: 0;
 }

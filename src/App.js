@@ -1,9 +1,11 @@
-import "./App.css";
-import Container from "./Container";
+import "./css/App.css";
+import Weather from "./Weather";
 function App() {
   return (
     <div className="App">
-      <Container />
+      <div className="card-body">
+        <Weather defaultCity="Manchester" />
+      </div>
     </div>
   );
 }
