@@ -28,7 +28,6 @@ export default function WeatherIcon(props) {
         icon={codeMapping[props.code]}
         src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
         color="#1e1e1e"
-        id="icon"
         className="Main"
         size={52}
       />

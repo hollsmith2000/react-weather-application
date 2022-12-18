@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Current from "./Current";
+import WeatherForecast from "./WeatherForecast";
 import "./css/Container.css";
 import axios from "axios";
 export default function Weather(props) {
@@ -58,6 +59,7 @@ export default function Weather(props) {
         </form>
 
         <Current value={17} data={weatherData} />
+        <WeatherForecast coordinates={weatherData.coordinates} />
 
         <a
           href="https://github.com/hollsmith2000/react-weather-application"

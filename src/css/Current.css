@@ -2,6 +2,9 @@
   text-align: center !important;
   font-size: 70px !important;
 }
+.units {
+  font-size: 20px;
+}
 
 .figures {
   padding: 30px !important;

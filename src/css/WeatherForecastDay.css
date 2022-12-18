@@ -1,0 +1,13 @@
+.temps {
+  background-color: #87cefa;
+  font-size: 20px;
+}
+
+.days {
+  color: #87cefa !important;
+  font-weight: bolder;
+}
+
+.fiveday {
+  margin: 20px !important;
+}

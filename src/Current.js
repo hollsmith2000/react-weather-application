@@ -1,8 +1,6 @@
 import React from "react";
-import WeatherTemperature from "./WeatherTemperature";
+
 import FormattedDate from "./FormattedDate";
-import Humidity from "./Humidity";
-import Wind from "./Wind";
 import WeatherIcon from "./WeatherIcon";
 import "./css/Current.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -26,20 +24,26 @@ export default function Current(props) {
           <div className="col figures">
             <div className="current">
               <WeatherIcon code={props.data.icon} />
-              <WeatherTemperature celsius={props.data.temperature} />
+
+              <span className="WeatherTemperature">
+                <span id="temperature">
+                  {Math.round(props.data.temperature)}
+                </span>
+                <span className="units">ºC</span>
+              </span>
             </div>
           </div>
-          <div className="col current-info">
+          <div className="col-lg-6 col-md-6 col-sm-8 current-info">
             <ul>
               <li>
                 <FontAwesomeIcon icon={faDroplet}></FontAwesomeIcon>
                 <i className="fa-solid fa-droplet"></i>
                 Humidity:
-                <Humidity humidity={props.data.humidity} />
+                <span> {props.data.humidity}% </span>
               </li>
               <li>
                 <FontAwesomeIcon icon={faWind}></FontAwesomeIcon>
-                Wind: <Wind wind={props.data.wind} />
+                Wind: <span>{Math.round(props.data.wind * 2.237)} mph</span>
               </li>
             </ul>
           </div>
