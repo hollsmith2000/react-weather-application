@@ -3,3 +3,7 @@
   margin: 30px auto;
   max-width: 700px !important;
 }
+
+.card-body {
+  padding: 30px;
+}

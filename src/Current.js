@@ -20,33 +20,31 @@ export default function Current(props) {
             <FormattedDate date={props.data.date} />
           </div>
         </div>
-        <div className="row">
-          <div className="col figures">
-            <div className="current">
-              <WeatherIcon code={props.data.icon} />
+      </div>
+      <div className="row">
+        <div className="col figures">
+          <div className="current">
+            <WeatherIcon code={props.data.icon} />
 
-              <span className="WeatherTemperature">
-                <span id="temperature">
-                  {Math.round(props.data.temperature)}
-                </span>
-                <span className="units">ºC</span>
-              </span>
-            </div>
+            <span className="WeatherTemperature">
+              <span id="temperature">{Math.round(props.data.temperature)}</span>
+              <span className="units">ºC</span>
+            </span>
           </div>
-          <div className="col-lg-6 col-md-6 col-sm-8 current-info">
-            <ul>
-              <li>
-                <FontAwesomeIcon icon={faDroplet}></FontAwesomeIcon>
-                <i className="fa-solid fa-droplet"></i>
-                Humidity:
-                <span> {props.data.humidity}% </span>
-              </li>
-              <li>
-                <FontAwesomeIcon icon={faWind}></FontAwesomeIcon>
-                Wind: <span>{Math.round(props.data.wind * 2.237)} mph</span>
-              </li>
-            </ul>
-          </div>
+        </div>
+        <div className="col-8 col-md-6 current-info">
+          <ul>
+            <li>
+              <FontAwesomeIcon icon={faDroplet}></FontAwesomeIcon>
+              <i className="fa-solid fa-droplet"></i>
+              Humidity:
+              <span> {props.data.humidity}% </span>
+            </li>
+            <li>
+              <FontAwesomeIcon icon={faWind}></FontAwesomeIcon>
+              Wind: <span>{Math.round(props.data.wind * 2.237)} mph</span>
+            </li>
+          </ul>
         </div>
       </div>
     </div>

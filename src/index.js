@@ -1,16 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./css/index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import Container from "react-bootstrap/Container";
 import Card from "react-bootstrap/Card";
-import "bootstrap/dist/css/bootstrap.min.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Container>
+    <Container className="testing">
       <Card className="app">
         <App />
       </Card>
